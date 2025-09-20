@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Greenroot Agrostore </title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1> Welcome to Greenroot Agrostore</h1>
+    <p>Your trusted source for fresh farm produce and agro products.</p>
+  </header>
+
+  <!-- Theme Toggle -->
+  <section class="feature">
+    <h2> Switch Theme</h2>
+    <button id="themeToggle">Toggle Light/Dark Mode</button>
+  </section>
+
+  <!-- Product Counter -->
+  <section class="feature">
+    <h2> Live Product Counter</h2>
+    <p>Available Tomato Baskets: <span id="productCount">50</span></p>
+    <button id="addStockBtn">Add Stock</button>
+    <button id="sellStockBtn">Sell Item</button>
+    <button id="resetStockBtn">Reset Count</button>
+  </section>
+
+  <!-- Customer Order Form -->
+  <section class="feature">
+    <h2>🛒 Place Your Order / Make Inquiry</h2>
+    <form id="orderForm">
+      <label>Full Name:
+        <input type="text" id="name" placeholder="Enter your full name">
+      </label>
+      <small class="error" id="nameError"></small><br>
+
+      <label>Email:
+        <input type="text" id="email" placeholder="Enter your email">
+      </label>
+      <small class="error" id="emailError"></small><br>
+
+      <label>Product:
+        <select id="product">
+          <option value="">-- Select a product --</option>
+          <option value="Tomatoes">Tomatoes</option>
+          <option value="Pepper">Pepper</option>
+          <option value="Onions">Onions</option>
+          <option value="Leafy Greens">Leafy Greens</option>
+        </select>
+      </label>
+      <small class="error" id="productError"></small><br>
+
+      <label>Quantity (kg):
+        <input type="number" id="quantity" placeholder="Enter quantity">
+      </label>
+      <small class="error" id="quantityError"></small><br>
+
+      <button type="submit">Submit Order</button>
+      <p id="formSuccess" class="success"></p>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Greenroot Agrostore. Freshness guaranteed year-round.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
